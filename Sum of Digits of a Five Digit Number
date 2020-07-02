@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+	
+    int a,a1=0,a2=0,a3=0,a4=0,a5=0,a22=0,a33=0,a44=0,sum=0;
+    scanf("%d", &a);
+    a1=a/10000;
+    a22=a-(a1*10000);
+    a2=a22/1000;
+    a33=a22-(a2*1000);
+    a3=a33/100;
+    a44=a33-(a3*100);
+    a4=a44/10;
+    a5=a44-(a4*10);
+    sum=a1+a2+a3+a4+a5;
+    
+    printf("%d",sum);
+    
+    return 0;
+}
