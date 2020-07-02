@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+void update(int *a,int *b) {
+      int ap,ab;
+      ap=((*a)+(*b));
+      ab=((*a)-(*b));
+       printf("%d\n",ap);
+      if(ab<0)
+      {ab=(ab*-1);
+      printf("%d\n",ab);
+      }
+      else {
+       printf("%d\n",ab);
+      }
+     
+}
+
+int main() {
+    int a, b;
+    int *pa = &a, *pb = &b;
+    
+    scanf("%d %d", &a, &b);
+    update(pa, pb);
+   
+
+    return 0;
+}
